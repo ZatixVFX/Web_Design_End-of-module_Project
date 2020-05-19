@@ -114,21 +114,21 @@
                     <!--User Information-->
                     <form method="POST">
                     <div class="form-group">
-                    <label for="Username" class="col-sm-4 col-form-label">Username:</label>
+                        <label for="Username" class="col-sm-4 col-form-label">Username:</label>
                     <div class="col-sm-8">
-                    <input type="text" class="form-control" id="Username" name="Username" placeholder="Enter a username" required>
+                        <input type="text" class="form-control" id="Username" name="Username" placeholder="Enter a username" required>
                     </div>
                     </div>
                     <div class="form_group">
-                    <label for="Password" class="col-sm-4 col-form-label">Password:</label>
+                        <label for="Password" class="col-sm-4 col-form-label">Password:</label>
                     <div class="col-sm-8">
-                    <input type="password" class="form-control" id="Password" name="Password" placeholder="Enter a password" required></br>
+                        <input type="password" class="form-control" id="Password" name="Password" placeholder="Enter a password" required></br>
                     </div>
+                    </div>
+                    <div class="form-group text-right">
+                        <input type="submit" class="btn btn-dark" value="Delete">
                     </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="delete_user()" type="submit" class="btn btn-danger" data-dismiss="modal">Delete</button>
                 </div>
             </div>
         </div>
@@ -323,9 +323,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script>
-        function delete_user() {
-        alert("Successfully deleted user");
-        }
         $(function () {
         $(window).on('scroll', function () {
             if ( $(window).scrollTop() > 10 ) {
